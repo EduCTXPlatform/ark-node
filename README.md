@@ -1,7 +1,6 @@
-# Ark
+# ECTX
 
-Ark is a next generation crypto-currency and decentralized application platform, written entirely in JavaScript. For more information please refer to our website: https://ark.io/.
-
+EduCTX: A blockchain-based higher education credit platform.
 This version is still beta, use at your own risks
 
 ## Install, Upgrade etc...
@@ -10,28 +9,13 @@ You need to provision a linux (ubuntu tested) server (digital ocean, vultur or o
 Then use the excellent ark-commander script
 ```
 cd
-wget https://ark.io/ARKcommander.sh
-bash ARKcommander.sh
+wget https://eductx.org/ECTXcommander.sh
+bash ECTXcommander.sh
 ```
 
 For developers, please read below in section "Developer Installation"
 
-## Details
-
-This is a fork from Lisk with the following features:
-- Removed sidechains (deprecated in favor of smartbridge)
-- Removed custom node version
-- Removed UI for stability and security reasons
-- Changed some constants (block rewards, blocktime etc...)
-- Added simple PBFT before forging new block
-- Ditch addresses from the protocol in favor of bitcoin like system, enabling HD Wallet as for BIP32
-- Completely rewritten node management using a single NodeManager and messaging system
-- Completely rewritten round management (removed mem_round, reward block fees to forger)
-- Added 64 bytes vendorField as first iteration of smart bridge
-- Made peers management entirely in-memory for efficiency
-- Strengthened the transaction management and broadcast (reject often, reject soon)
-- Rearchitect with relay nodes and forging nodes
-- Nodes broadcast only block headers.
+This is a fork from ARK (http://github.com/ARKEcosystem) with the following features:
 
 ### Planned features:
 - Simple blockchain validation for SPV and use in lite clients
@@ -78,8 +62,8 @@ sudo npm install grunt-cli -g
 
 Clone this repository
 ```
-git clone https://github.com/arkecosystem/ark-node.git
-cd ark-node
+git clone https://github.com/EduCTXPlatform/ectx-node.git
+cd ectx-node
 ```
 
 Install node modules:
@@ -89,19 +73,19 @@ npm install
 ```
 
 ## Launch
-To launch Ark on testnet:
+To launch ECTX on testnet:
 ```
 createdb ark_testnet
 npm run start:testnet
 ```
 
-To launch Ark on devtnet:
+To launch ECTX on devtnet:
 ```
 createdb ark_devnet
 npm run start:devnet
 ```
 
-To launch Ark on mainnet (when launched):
+To launch ECTX on mainnet (when launched):
 ```
 createdb ark_mainnet
 npm run start:mainnet
@@ -142,7 +126,7 @@ Then you can distribute the config.json (without the delegates secrets inside, a
 
 
 ## Tests
-Load git submodule [ark-js](https://github.com/arkecosystem/ark-js):
+Load git submodule [ectx-js](https://github.com/EduCTXPlatform/ectx-js):
 ```
 git submodule init
 git submodule update
@@ -175,17 +159,13 @@ peace vanish bleak box tuna woman rally manage undo royal lucky since
 
 
 ## Authors
-- FX Thoorens <fx.thoorens@ark.io>
-- Boris Povod <boris@crypti.me>
-- Pavel Nekrasov <landgraf.paul@gmail.com>
-- Sebastian Stupurac <stupurac.sebastian@gmail.com>
-- Oliver Beddows <oliver@lisk.io>
+This is a fork from ARK.io http://github.com/ARKEcosystem
 
 ## License
 
 The MIT License (MIT)
 
-Copyright (c) 2016-2017 Ark
+Copyright (c) 2016-2017 Ark, ECTX
 Copyright (c) 2016 Lisk
 Copyright (c) 2014-2015 Crypti
 
