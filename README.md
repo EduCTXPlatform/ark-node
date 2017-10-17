@@ -6,7 +6,7 @@ This version is still beta, use at your own risks
 ## Install, Upgrade etc...
 You need to provision a linux (ubuntu tested) server (digital ocean, vultur or other).
 
-Then use the excellent ark-commander script
+Then use the excellent ectx-commander install and monitor script
 ```
 cd
 wget https://eductx.org/ECTXcommander.sh
